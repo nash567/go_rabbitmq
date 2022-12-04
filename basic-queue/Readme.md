@@ -1,4 +1,4 @@
-# basic queue
+# basic queue programs to send and receive messages from a named queue.
 
 ## It is a basic implementation of rabbitmq Queue here we only have a sender and a reciever
 
