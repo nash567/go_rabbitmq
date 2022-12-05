@@ -74,3 +74,11 @@ From now on the logs exchange will append messages to our queue.
 
 
 ![alt alltogether](https://www.rabbitmq.com/img/tutorials/python-three-overall.png)
+
+
+# Fanout Exchange
+A fanout exchange copies and routes a received message to all queues that are bound to it regardless of routing keys or pattern matching as with direct and topic exchanges. The keys provided will simply be ignored.
+
+Fanout exchanges can be useful when the same message needs to be sent to one or more queues with consumers who may process the same message in different ways.
+
+A message received by the exchange is copied and routed to all three queues bound to the exchange. It could be sport or weather updates that should be sent out to each connected mobile device when something happens, for instance.
