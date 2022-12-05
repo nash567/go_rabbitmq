@@ -27,3 +27,8 @@ open another terminal and setup sender to send new messages to the queue
 ```
 go run send.go
 ```
+
+
+# Default exchange
+
+The default exchange is a pre-declared direct exchange with no name, usually referred by an empty string. When you use default exchange, your message is delivered to the queue with a name equal to the routing key of the message. Every queue is automatically bound to the default exchange with a routing key which is the same as the queue name.
